@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .label {
+      display: block;
+      /* text-align: center; */
+    }
+
+    .hobbies {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #btn {
+      width: 50%;
+      margin-top: 5rem;
+    }
+  </style>
+  <body>
+    <div style="display: grid; align-items: center; justify-items: center">
+      <h1>INFORMATION</h1>
+      <br />
+      <form action="exercise.php" method="POST">
+        <p class="label">Name:</p>
+        <input type="text" name="username" />
+        <br />
+        <p class="label">Password:</p>
+        <input type="password" name="password" />
+        <br />
+        <p class="label">Class:</p>
+        <input type="text" name="class" />
+        <br />
+        <p class="label">Email:</p>
+        <input type="email" name="email" />
+        <br />
+        <p class="label">Hobbies:</p>
+        <div class="hobbies">
+          <input type="checkbox" name="game" />
+          <label for="game">Games</label>
+        </div>
+        <div class="hobbies">
+          <input type="checkbox" name="movies" />
+          <label for="movies">Movies</label>
+        </div>
+        <div class="hobbies">
+          <input type="checkbox" name="books" />
+          <label for="books">Books</label>
+        </div>
+        <div class="hobbies">
+          <input type="checkbox" name="drugs" />
+          <label for="drugs">Drugs and weed</label>
+        </div>
+        <div class="hobbies">
+          <input type="checkbox" name="chicks" />
+          <label for="chicks">Chicks</label>
+        </div>
+        <div class="hobbies">
+          <input type="checkbox" name="vodka" />
+          <label for="vodka">Vodka</label>
+        </div>
+        <div class="hobbies">
+          <input type="checkbox" name="other" />
+          <label for="other">Other</label>
+        </div>
+        <button type="submit" id="btn">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
