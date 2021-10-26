@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC <HTML>
+
+<BODY>
+
+    <SCRIPT type="text/javascript">
+
+// Create array and add three elenents
+var myArray = new Array();
+myArray.push("Tim");
+myArray.push("Janice");
+myArray.push("Joe");
+
+// print out the contents and newline
+document.writeln( myArray.toString() );
+document.writeln("<BR>");
+
+// access array elenent by index
+document.writeln( myarray[1] );
+document.writeln("<BR>");
+
+// print out the length of the array and newline
+document.writeln( "Array Size: " + myArray.length);
+document.writeln("<BR>");
+
+// Pop the last element off the array and display it
+var who = myArray.pop();
+document.writeln( "Popped Element" + who);
+document.writeln("<BR>");
+
+// print out the length of the array and newline
+document.writeln(" Array Size: "+ myArray.length );
+document.writeln("<BR>");
+document.writeln("<BR>");
+ 
+
+// Populating array on instantiation
+var otherArray = new Array("dog", 3, 8.4);
+
+document.writeln("<BR>");
+document.writeln( otherArray.toString() );
+document.writeln("<BR>");
+document.writeln("<BR>"); 
+ 
+
+// setting and acce:
+otherdrray[ "key" ] = value;
+document.writeln( otherArray["key"] );
+document.writeln("<BR>");
+
+</SCRIPT>
+</BODY>
+
+</HTML>
